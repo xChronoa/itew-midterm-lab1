@@ -51,3 +51,19 @@ nav {
 .nav-link:hover::after {
     scale: 1 1;
 }
+
+@media (max-width: 576px) {
+    nav {
+        padding: 15px;
+    }
+
+    .nav-group {
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .nav-link::after {
+        bottom: -.5rem;
+    }
+}
