@@ -3,40 +3,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 body{
     background-color: #E4E4E4;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-header{
-    background-color: #1A6868;
-    padding: 20px;
-}
-
-nav a{
-    text-decoration: none;
-}
-
-.container-links{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 20px;
-}
-
-.links{
-  background-color: #ddd;
-  border-radius: 10px;
-  color: black;
-  padding: 5px 25px;
-  transition: 0.3s;
-  cursor: pointer
-}
-
-.links:hover{
-  background-color: #3e8e41;
-  color: white;
 }
 
 .container-main{
