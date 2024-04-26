@@ -1,7 +1,26 @@
 nav {
-    display: block;
+    display: flex;
     background-color: rgb(26, 104, 104);
     padding: 20px 15px;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 2.5em;
+}
+
+.logo a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo img {
+    width: 50px;
 }
 
 .nav-group {
@@ -12,6 +31,9 @@ nav {
 }
 
 .nav-group li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     box-sizing: border-box;
     position: relative;
     text-align: center;
@@ -25,6 +47,11 @@ nav {
     text-transform: uppercase;
     font-weight: bold;
     letter-spacing: 2px;
+    transition: .25s;
+}
+
+.nav-link:hover {
+    color: #d6d6d6;
 }
 
 /* CSS animation for underline of the navigation links in nav */
@@ -46,9 +73,15 @@ nav {
     scale: 1 1;
 }
 
-@media (max-width: 576px) {
+.active::after {
+    scale: 1 1;
+}
+
+@media (max-width: 768px) {
     nav {
-        padding: 15px;
+        padding: 35px;
+        flex-direction: column;
+        gap: 20px;
     }
 
     .nav-group {
@@ -57,7 +90,11 @@ nav {
         gap: 25px;
     }
 
-    .nav-link::after {
-        bottom: -.5rem;
+    .nav-link:hover::after {
+        scale: .5 1;
+    }
+
+    .active::after {
+        scale: .5 1;
     }
 }

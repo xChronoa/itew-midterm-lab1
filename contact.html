@@ -1,74 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="CSS/default.css">
-    <link rel="stylesheet" href="CSS/navigation.css">
-    <link rel="stylesheet" href="CSS/footer.css">
-    <link rel="stylesheet" href="CSS/contact.css">
-    <title>Contact</title>
-</head>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="CSS/default.css" />
+        <link rel="stylesheet" href="CSS/navigation.css" />
+        <link rel="stylesheet" href="CSS/footer.css" />
+        <link rel="stylesheet" href="CSS/contact.css" />
+        <title>Contact</title>
+    </head>
     <body>
         <header>
             <nav>
+                <div class="logo">
+                    <a href="/home.html">
+                        <img src="CSS/Resources/logo_nobg.png" alt="FAAB Logo" />
+                    </a>
+                </div>
                 <ul class="nav-group">
                     <li><a class="nav-link" href="/home.html">Home</a></li>
-                    <li><a class="nav-link" href="">About</a></li>
-                    <li><a class="nav-link" href="">Gallery</a></li>
-                    <li><a class="nav-link" href="">Group</a></li>
-                    <li><a class="nav-link" href="">Contact</a></li>
+                    <li>
+                        <a class="nav-link" href="/programs.html">Programs</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="/trainers.html">Trainers</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="/membership.html">Membership</a>
+                    </li>
+                    <li>
+                        <a class="nav-link active" href="/contact.html">Contact</a>
+                    </li>
                 </ul>
             </nav>
         </header>
+        <main>
+            <section class="contact-section">
+                <article class="contact-bg">
+                    <h2>contact us</h2>
+                    <h3>Get in Touch with Us</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing
+                        elit. Assumenda iste facilis quos impedit fuga nobis
+                        modi debitis laboriosam velit reiciendis quisquam alias
+                        corporis, maxime enim, optio ab dolorum sequi qui.
+                    </p>
+                </article>
 
-        <div class="container-main">
-            <div class="main-title">
-                <h1>Contact Us</h1><br><hr>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus rerum fugiat dolore nulla eaque fugit asperiores nemo eius ipsam distinctio, unde et quo voluptas a eos molestiae sed necessitatibus totam.</p>
-            </div>
-
-            <div class="contact-box">
-                <div class="contact-form">
-                    <h3>Send your feedback!</h3>
-
-                    <form action="#" method="post">
-                        <div class="form-group">
-                            <label for="name">Name:</label>
-                            <input type="text" placeholder="input your name" required>
+                <article class="contact-container">
+                    <!-- Website's Contact Information -->
+                    <div class="contact-info">
+                        <div class="info phone-info">
+                            <span><img src="CSS/Resources/phone.svg" alt="Phone"></span>
+                            <span>Phone No.</span>
+                            <span class="text">+63 0945-203-817</span>
                         </div>
-                        <div class="form-group">
-                            <label for="email">Email:</label>
-                            <input type="email" placeholder="input your email" required>
+                        <div class="info email-info">
+                            <span><img src="CSS/Resources/email.svg" alt="Email"></span>
+                            <span>E-mail</span>
+                            <span class="text">faab.organization@faab.com</span>
                         </div>
-                        <div class="form-group">
-                            <label for="message">Message:</label>
-                            <textarea id="message" name="message" rows="5" required></textarea>
+                        <div class="info address-info">
+                            <span><img src="CSS/Resources/address.svg" alt="Address"></span>
+                            <span>Address</span>
+                            <span class="text">Cabuyao City, Province of Laguna,
+                                Philippines</span>
                         </div>
-                        <button type="submit">Send</button>
-                    </form>
-                </div>
+                        <div class="info time-info">
+                            <span><img src="CSS/Resources/time.svg" alt="Time"></span>
+                            <span>Opening Hours</span>
+                            <span class="text">Monday - Friday (07:00 AM to 09:00 PM)</span>
+                        </div>
+                    </div>
 
-                <div class="contact-info">
-                    <h3>Reach Us</h3>
-                    <ul>
-                        <li><strong>Email:</strong> info@example.com</li>
-                        <li><strong>Phone:</strong> +1234567890</li>
-                        <li><strong>Address:</strong> 123 Street Name, City, Country</li>
-                    </ul>
+                    <!-- User Message Form -->
+                    <div class="contact-form">
+                        <form method="" action="">
+                            <div class="input-group">
+                                <input type="text" class="form-control" placeholder="First Name" required />
+                                <input type="text" class="form-control" placeholder="Last Name" required />
+                            </div>
+                            <div class="input-group">
+                                <input type="email" class="form-control" placeholder="E-mail" required/>
+                                <input type="text" class="form-control" placeholder="Phone" required/>
+                            </div>
 
-
-                </div>
-            </div>
-        </div>
+                            <textarea rows="5" placeholder="Message" class="form-control" style="resize: none"></textarea>
+                            <input type="submit" class="send-btn" value="send message" required/>
+                        </form>
+                    </div>
+                </article>
+            </section>
+        </main>
         <!-- Footer/Copyrights -->
         <footer>
             &copy; 2024 FAAB. All rights reserved.
             <div class="links">
-                <a href=""><img src="CSS/Resources/Icons/facebook.svg" alt="Facebook"></a>
-                <a href=""><img src="CSS/Resources/Icons/github.svg" alt="GitHub"></a>
-                <a href=""><img src="CSS/Resources/Icons/instagram.svg" alt="Instagram"></a>
-                <a href=""><img src="CSS/Resources/Icons/twitter.svg" alt="Twitter"></a>
+                <a href=""><img src="CSS/Resources/Icons/facebook.svg" alt="Facebook" /></a>
+                <a href=""><img src="CSS/Resources/Icons/github.svg" alt="GitHub" /></a>
+                <a href=""><img src="CSS/Resources/Icons/instagram.svg" alt="Instagram" /></a>
+                <a href=""><img src="CSS/Resources/Icons/twitter.svg" alt="Twitter" /></a>
             </div>
         </footer>
     </body>
