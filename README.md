@@ -23,3 +23,4 @@ Submission Requirements:
    
 6. Make sure that all the links submitted are working.
 
+![ITEW4 Midterm Laboratory Exercise 1 - Grading Rubric](https://github.com/xChronoa/itew-midterm-lab1/blob/master/itew-midterm-lab1%20grading-rubric.png)
