@@ -1,0 +1,226 @@
+/* Macro Layout */
+main {
+    min-height: 100vh;
+}
+
+main > section {
+    padding: 30px 0;
+}
+
+/* Micro Layout */
+/* Section #1 */
+.find-gym {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #003C43;
+    color: white;
+}
+
+.find-gym .content {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    width: 50%;
+    padding: 40px 0;
+    gap: 20px;
+    text-align: left;
+}
+
+.find-gym .content h2 {
+    font-size: 3.1rem;
+}
+
+.find-gym .content button {
+    background-color: white;
+    color: rgb(26, 104, 104);
+    border: 1px solid white;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 200ms ease-in-out;
+}
+
+.find-gym .content button:hover {
+    transform: scale(110%, 110%);
+}
+
+/* Micro Layout */
+/* Section #2 */
+.gym-benefits {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.gym-benefits h2 {
+    color: rgb(26, 104, 104);
+    text-align: center;
+    font-size: 1.8rem;
+    width: 80%;
+    margin: 1.2em 0;
+}
+
+.gym-benefits .grid {
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    justify-content: center;
+    align-items: center;
+    row-gap: 50px;
+    column-gap: 20px;
+}
+
+.benefit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+}
+
+.benefit h3 {
+    font-size: 1.2rem;
+}
+
+.benefit p {
+    font-size: 1rem;
+    width: 70%;
+    color: rgb(70, 70, 70);
+}
+
+/* Section #3 */
+.why-join {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.why-join header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: teal;
+    width: 100%;
+    height: 20vh;
+    box-shadow: 0 5px 10px 0 rgb(0, 0, 0, 0.5);
+}
+
+.why-join header h2 {
+    font-size: 2rem;
+    color: white;
+    -webkit-text-stroke-color: #003C43;
+    -webkit-text-stroke-width: .8px;
+}
+
+.why-join header h4 {
+    font-style: italic;
+    font-size: 1.3rem;
+    color: white;
+    -webkit-text-stroke-color: #003C43;
+    -webkit-text-stroke-width: .8px;
+}
+
+.gym-members {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 2fr));
+    align-items: center;
+    column-gap: 20px;
+    padding: 20px;
+}
+
+.gym-members .member {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    min-height: 70vh;
+    background-color: #77B0AA;
+}
+
+.gym-members .member img{
+    width: 100%;
+    min-height: 30vh;
+    max-height: 200px;
+    object-fit: cover;
+}
+
+.gym-members .member p {
+    padding: 20px;
+    text-align: center;
+}
+
+.gym-members .member span {
+    justify-self: end;
+    align-self: flex-end;
+    padding: 0 40px
+}
+
+.gym-members .member button {
+    margin: 2.5em 0;
+    background-color: rgb(26, 104, 104);
+    color: white;
+    font-weight: bold;
+    border: 2px solid rgb(26, 104, 104);
+    padding: 10px 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px 2px rgb(0, 0, 0, 0.5);
+    transition: 200ms ease-in-out;
+    cursor: pointer;
+}
+
+.gym-members .member button:hover {
+    transform: scale(1.1, 1.1);;
+}
+
+@media (max-width: 768px) {
+    .find-gym .content {
+        width: 75%;
+        align-items: center;
+    }
+
+    .find-gym .content h2 {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    .find-gym .content p {
+        text-align: center;
+        font-size: 1rem;
+    }
+
+    .find-gym .content button {
+        font-size: 1rem;
+    }
+
+    .gym-benefits .grid {
+        width: 100%;
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    }
+
+    .gym-members {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 50px;
+        padding: 50px 20px;
+    }
+
+    .gym-members .member img{
+        width: 100%;
+        height: 100%;
+        max-height: none;
+        object-fit: cover;
+    }
+}
