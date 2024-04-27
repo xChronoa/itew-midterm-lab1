@@ -71,7 +71,7 @@ main > section {
 .gym-benefits .grid {
     width: 80%;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
     justify-content: center;
     align-items: center;
     row-gap: 50px;
@@ -222,5 +222,9 @@ main > section {
         height: 100%;
         max-height: none;
         object-fit: cover;
+    }
+
+    .why-join h2 {
+        text-align: center;
     }
 }
